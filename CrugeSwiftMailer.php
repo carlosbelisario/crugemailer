@@ -91,7 +91,6 @@ class CrugeSwiftMailer extends CrugeMailerBase implements ICrugeMailer
 			->setTo($to)
 			->setBody($body, $contentType);			
 		} else {
-			echo $attachment;				
 			$attachmentFile = $this->container->getAttachmenter($attachment);
 			$message = $this->container->getMessenger($subject)			
 			->setFrom($from)
