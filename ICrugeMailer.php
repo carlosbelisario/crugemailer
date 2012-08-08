@@ -21,5 +21,5 @@ interface ICrugeMailer {
      * @param  string $subject
      * @return boolean
      */
-    public function sendEmail($body, array $to, array $from = null, $subject = '');
+    public function sendEmail($body, array $to, array $from = null, $subject = '', $contentType = 'text/html', $attachment = null);
 }
